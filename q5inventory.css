@@ -1,0 +1,22 @@
+/* External CSS */
+.container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.inventory-table th, .inventory-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.inventory-table th {
+    background-color: #003366;
+    color: #fff;
+}

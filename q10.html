@@ -1,0 +1,59 @@
+<!--Perform from the following to develop interactive web pages using JavaScript:
+Error handling, Validations, Arrays, String, Date
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Web Page</title>
+</head>
+<body>
+    <h1>Interactive Web Page</h1>
+
+    <!-- Error Handling and Validations -->
+    <script>
+        function validateEmail(email) {
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailRegex.test(email);
+        }
+
+        try {
+            const userEmail = "user@example.com";
+            if (validateEmail(userEmail)) {
+                console.log("Valid email address.");
+            } else {
+                throw new Error("Invalid email address.");
+            }
+        } catch (error) {
+            console.error("Validation error:", error.message);
+        }
+    </script>
+
+    <!-- Arrays and Strings -->
+    <script>
+        const fruits = ["Apple", "Banana", "Cherry"];
+        fruits.push("Date");
+        fruits.pop();
+        console.log("Updated Fruits:", fruits);
+
+        const sentence = "JavaScript is an amazing language";
+        const words = sentence.split(" ");
+        console.log("Words:", words);
+
+        const reversedSentence = words.reverse().join(" ");
+        console.log("Reversed Sentence:", reversedSentence);
+    </script>
+
+    <!-- Date Handling -->
+    <script>
+        const currentDate = new Date();
+        console.log("Current Date:", currentDate);
+
+        const futureDate = new Date(currentDate);
+        futureDate.setDate(currentDate.getDate() + 7);
+        console.log("Date 7 days from now:", futureDate);
+
+        const formattedDate = currentDate.toLocaleDateString();
+        console.log("Formatted Date:", formattedDate);
+    </script>
+</body>
+</html>

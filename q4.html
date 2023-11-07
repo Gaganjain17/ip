@@ -1,0 +1,71 @@
+<!--Create a webpage to implement class timetable Images, Tables, List, Frames, Forms, Multimedia-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="q4.css">
+    <title>Class Timetable</title>
+</head>
+<body>
+    <h1>Class Timetable</h1>
+    
+    <table border="1">
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>8:00 - 9:00 AM</td>
+            <td>Class A</td>
+            <td>Class B</td>
+            <td>Class C</td>
+            <td>Class D</td>
+            <td>Class E</td>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00 AM</td>
+            <td>Class F</td>
+            <td>Class G</td>
+            <td>Class H</td>
+            <td>Class I</td>
+            <td>Class J</td>
+        </tr>
+        <!-- Add more rows for additional time slots -->
+    </table>
+    
+    <h2>Class Information</h2>
+    <ul>
+        <li>Class A: Room 101</li>
+        <li>Class B: Room 102</li>
+        <li>Class C: Room 103</li>
+        <!-- Add more class information here -->
+    </ul>
+    
+    <h2>Class Materials</h2>
+    <iframe src="https://www.example.com/class-materials" width="800" height="400" frameborder="0"></iframe>
+    
+    <h2>Contact Us</h2>
+    <form action="contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h2>Multimedia</h2>
+    <video controls width="640" height="360">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>

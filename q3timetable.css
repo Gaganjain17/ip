@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+}
+
+.timetable {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.timetable th, .timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.timetable th {
+    background-color: #003366;
+    color: #fff;
+}
+
+.class-cell {
+    background-color: #66ccff;
+}
+
+/* Customize the timetable styling as needed */

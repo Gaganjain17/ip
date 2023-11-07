@@ -1,0 +1,86 @@
+<!--Perform from the following to develop interactive web pages using JavaScript:
+a. Variables, Operators, Conditions, Loops,
+b. Functions, Events, Classes and Objects,
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Web Page</title>
+</head>
+<body>
+    <h1>JavaScript Basics</h1>
+
+    <!-- Variables and Operators -->
+    <script>
+        // Variables
+        var x = 5;
+        var y = 10;
+
+        // Operators
+        var sum = x + y;
+        var product = x * y;
+
+        document.write("Sum: " + sum + "<br>");
+        document.write("Product: " + product + "<br>");
+    </script>
+
+    <!-- Conditions -->
+    <script>
+        var age = 20;
+
+        if (age >= 18) {
+            document.write("You are an adult.<br>");
+        } else {
+            document.write("You are not an adult.<br>");
+        }
+    </script>
+
+    <!-- Loops -->
+    <script>
+        for (var i = 1; i <= 5; i++) {
+            document.write("Iteration " + i + "<br>");
+        }
+    </script>
+
+    <h1>JavaScript Advanced</h1>
+
+    <!-- Functions -->
+    <script>
+        function greet(name) {
+            alert("Hello, " + name + "!");
+        }
+
+        greet("John");
+    </script>
+
+    <!-- Events -->
+    <button id="myButton">Click Me</button>
+    <script>
+        var button = document.getElementById("myButton");
+
+        button.addEventListener("click", function() {
+            alert("Button Clicked!");
+        });
+    </script>
+
+    <!-- Classes and Objects -->
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            getInfo() {
+                return this.name + " is " + this.age + " years old.";
+            }
+        }
+
+        var person1 = new Person("Alice", 25);
+        var person2 = new Person("Bob", 30);
+
+        document.write(person1.getInfo() + "<br>");
+        document.write(person2.getInfo() + "<br>");
+    </script>
+</body>
+</html>
